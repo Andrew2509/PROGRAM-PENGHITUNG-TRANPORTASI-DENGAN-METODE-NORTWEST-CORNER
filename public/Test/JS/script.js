@@ -12,12 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const sources = parseInt(document.getElementById(`sources${index}`).value) + 1;
         document.getElementById(`sources${index}`).value = sources;
 
-        // Menambah baris supply
         const newRow = document.createElement('tr');
         newRow.innerHTML = `<td>S${sources}</td><td><input type="number" wire:model="cases.${index}.supply.${sources - 1}" min="0"></td>`;
         supplyTable.appendChild(newRow);
 
-        // Menambah baris biaya transportasi
         const newTransportRow = document.createElement('tr');
         newTransportRow.innerHTML = `<td>S${sources}</td>`;
         const destinations = parseInt(document.getElementById(`destinations${index}`).value);
@@ -35,12 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const destinations = parseInt(document.getElementById(`destinations${index}`).value) + 1;
         document.getElementById(`destinations${index}`).value = destinations;
 
-        // Menambah kolom demand
         const newRow = document.createElement('tr');
         newRow.innerHTML = `<td>D${destinations}</td><td><input type="number" wire:model="cases.${index}.demand.${destinations - 1}" min="0"></td>`;
         demandTable.appendChild(newRow);
 
-        // Menambah kolom biaya transportasi
         const transportRows = transportTable.querySelectorAll('tr');
         transportRows[0].innerHTML += `<th>D${destinations}</th>`;
         for (let i = 1; i < transportRows.length; i++) {
@@ -48,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Menjalankan perhitungan biaya dan menampilkan hasilnya
+    // Jalankan perhitungan biaya menggunakan Northwest Corner
     function calculateCost(index) {
         const sources = parseInt(document.getElementById(`sources${index}`).value);
         const destinations = parseInt(document.getElementById(`destinations${index}`).value);
@@ -57,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let demand = [];
         let costs = [];
 
-        // Ambil nilai supply, demand, dan biaya dari input
         for (let i = 0; i < sources; i++) {
             supply.push(parseInt(document.querySelector(`#supplyTable${index} tr:nth-child(${i + 2}) td input`).value) || 0);
         }
@@ -74,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
             costs.push(costRow);
         }
 
-        // Hitung total biaya menggunakan Algoritma Northwest Corner
         let totalCost = 0;
         let allocation = [];
 
@@ -86,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 let allocated = Math.min(tempSupply[i], tempDemand[j]);
                 totalCost += allocated * costs[i][j];
 
-                // Update supply dan demand yang sudah dialokasikan
                 tempSupply[i] -= allocated;
                 tempDemand[j] -= allocated;
 
@@ -95,15 +88,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // Menampilkan hasil alokasi dan total biaya
         displaySolution(index, allocation, costs, totalCost);
     }
 
-    // Menampilkan hasil perhitungan
+    // Menampilkan hasil ke DOM
     function displaySolution(index, allocation, costs, totalCost) {
         const solutionContainer = document.querySelector(`#solution${index}`);
         let html = `<h3>Hasil Alokasi Kasus ${index + 1}</h3>`;
-        html += `<table><thead><tr><th>Sumber</th><th>Tujuan</th><th>Unit</th><th>Biaya per Unit</th><th>Total</th></tr></thead><tbody>`;
+        html += `<table id="allocation-table"><thead><tr><th>Sumber</th><th>Tujuan</th><th>Unit</th><th>Biaya per Unit</th><th>Total</th></tr></thead><tbody>`;
 
         for (let i = 0; i < allocation.length; i++) {
             for (let j = 0; j < allocation[i].length; j++) {
@@ -117,11 +109,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        html += `</tbody></table><p>Total Biaya: ${totalCost}</p>`;
+        html += `</tbody></table><p><strong>Total Biaya:</strong> ${totalCost}</p>`;
+        html += `<button class="btn btn-info mt-3" onclick="triggerDownload()">Download Hasil Alokasi</button>`;
         solutionContainer.innerHTML = html;
     }
 
-    // Bind events to buttons
+    // Event binding tombol-tombol
     const addRowButtons = document.querySelectorAll('button[wire\\:click="addRow"]');
     addRowButtons.forEach((button, index) => {
         button.addEventListener('click', () => addRow(index));
@@ -136,20 +129,31 @@ document.addEventListener("DOMContentLoaded", function () {
     calculateButtons.forEach((button, index) => {
         button.addEventListener('click', () => calculateCost(index));
     });
-});
 
-document.addEventListener('livewire:load', function () {
-    window.addEventListener('downloadImage', event => {
-        // Menggunakan html2canvas untuk mengonversi tabel menjadi gambar
-        const table = document.getElementById('allocation-table');
-
-        html2canvas(table).then(canvas => {
-            // Mengunduh gambar
-            const imgURL = canvas.toDataURL('image/png');
-            const link = document.createElement('a');
-            link.href = imgURL;
-            link.download = 'hasil_alokasi.png';  // Nama file gambar
-            link.click();
+    // Tambahkan animasi fokus input
+    document.querySelectorAll('.form-input').forEach(input => {
+        input.addEventListener('focus', function () {
+            this.parentNode.querySelector('.input-icon').style.color = '#4f46e5';
+        });
+        input.addEventListener('blur', function () {
+            this.parentNode.querySelector('.input-icon').style.color = '#94a3b8';
         });
     });
 });
+
+// Fungsi Download sebagai Gambar
+function triggerDownload() {
+    const table = document.getElementById('allocation-table');
+    html2canvas(table).then(canvas => {
+        const imgURL = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = imgURL;
+        link.download = 'hasil_alokasi.png';
+        link.click();
+
+        // Penjelasan setelah download
+        setTimeout(() => {
+            alert("✅ File hasil alokasi berhasil diunduh sebagai gambar.\nSilakan periksa folder 'Downloads' Anda.");
+        }, 1000);
+    });
+}
