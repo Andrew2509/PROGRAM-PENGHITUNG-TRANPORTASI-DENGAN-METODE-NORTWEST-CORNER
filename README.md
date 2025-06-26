@@ -96,7 +96,7 @@ resources/
 
 ## 🧮 Contoh Input & Output
 
-![Contoh Input](./public/Test/Image/input.png)
+![Contoh Input](./public/Test/Image/Transportasi.png)
 ![Contoh Output](./public/Test/Image/Output.png)
 
 ---
