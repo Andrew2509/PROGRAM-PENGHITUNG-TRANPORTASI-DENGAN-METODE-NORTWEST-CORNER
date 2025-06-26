@@ -111,6 +111,7 @@ resources/
 
 2. **Install dependencies:**
    ```bash
+   composer update
    composer install
    npm install && npm run dev
    ```
@@ -155,8 +156,8 @@ Semua kebutuhan fungsional telah diuji dan berjalan sesuai ekspektasi, termasuk:
 
 ## 👨‍💻 Kontributor
 
-- **Andrew** – Desain Input & Tampilan
-- **Noval** – Logika Algoritma & Output
+- **1462100248_Princenton Andrew Brightly Masrikat** – Desain Input & Tampilan
+- **1462100264_Nouval B. Saputra** – Logika Algoritma & Output
 
 ---
 
