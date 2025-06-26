@@ -7,55 +7,166 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi ini merupakan sistem berbasis web yang dirancang untuk menghitung solusi awal masalah transportasi menggunakan **metode Northwest Corner**, bertujuan menyederhanakan proses alokasi distribusi supply dan demand dengan efisien dan akurat.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🧭 Tujuan Proyek
 
-## Learning Laravel
+- Mengotomatisasi perhitungan alokasi awal distribusi barang berdasarkan supply dan demand.
+- Menyediakan antarmuka input yang fleksibel dan mudah digunakan.
+- Menghasilkan output berupa tabel alokasi dan total biaya transportasi.
+- Menyediakan fitur ekspor hasil perhitungan ke PDF dan CSV.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🔧 Fitur Utama
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- ✅ Input data **Supply** dan **Demand**.
+- ✅ Input **Matriks Biaya Transportasi**.
+- ✅ Perhitungan otomatis dengan metode **Northwest Corner**.
+- ✅ Tabel hasil alokasi dan total biaya.
+- ✅ Validasi input (supply = demand, tidak boleh kosong).
+- ✅ Tombol reset dan ekspor hasil (PDF/CSV).
+- ✅ Halaman bantuan/tutorial.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## ⚙️ Teknologi yang Digunakan
 
-### Premium Partners
+- **Laravel 10**
+- **Livewire (komponen interaktif tanpa reload)**
+- **Blade Templates**
+- **MySQL**
+- **HTML5, CSS3, JavaScript**
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🗂 Struktur Folder Utama
 
-## Code of Conduct
+```
+app/
+├── Livewire/
+│   ├── Auth/
+│   │   ├── Login.php
+│   │   └── Bantuan.php
+│   ├── DemandTable.php
+│   ├── SupplyTable.php
+│   └── Transportation.php
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+public/
+└── Test/
+    ├── css/
+    │   ├── bantuan.css
+    │   ├── login.css
+    │   └── style.css
+    └── js/
+        └── script.js
 
-## Security Vulnerabilities
+resources/
+└── views/
+    ├── components/
+    │   ├── layouts/
+    │   │   └── app.blade.php
+    │   ├── demand-table.blade.php
+    │   └── supply-table.blade.php
+    └── livewire/
+        ├── auth/
+        │   └── login.blade.php
+        ├── bantuan.blade.php
+        └── transportation.blade.php
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🧮 Contoh Input & Output
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![Contoh Input](./screenshots/input.png)
+![Contoh Output](./screenshots/output.png)
+
+---
+
+## 🧪 Instalasi & Menjalankan Proyek
+
+1. **Clone repositori:**
+   ```bash
+   git clone https://github.com/yourusername/yourproject.git
+   cd yourproject
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   composer install
+   npm install && npm run dev
+   ```
+
+3. **Atur file `.env`:**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Atur koneksi database di `.env` lalu jalankan migrasi dan seeder:**
+   ```bash
+   php artisan migrate --seed
+   ```
+
+5. **Jalankan server lokal:**
+   ```bash
+   php artisan serve
+   ```
+
+> Catatan: Username dan password telah tersedia di database melalui proses seeding.
+
+---
+
+## ✅ Validasi & Verifikasi
+
+Semua kebutuhan fungsional telah diuji dan berjalan sesuai ekspektasi, termasuk:
+- Validasi supply = demand.
+- Form input numerik.
+- Algoritma Northwest Corner bekerja tanpa error.
+- Output valid dan dapat diekspor.
+
+---
+
+## 📚 Referensi
+
+- Taha, H. A. (2017). *Operations Research: An Introduction*. Pearson.
+- Wang, Y., et al. (2019). *Transportation Cost Analysis in Supply Chain Management*. *Journal of Logistics*.
+- Bowers, S., et al. (2020). *Educational Tools for Logistics and Supply Chain Management*.
+
+---
+
+## 👨‍💻 Kontributor
+
+- **Andrew** – Desain Input & Tampilan
+- **Noval** – Logika Algoritma & Output
+
+---
+
+## 📜 Lisensi
+
+Proyek ini dibuat untuk keperluan akademik (UAS Rekayasa Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di lingkungan produksi.
+
+
+---
+
+## 🔐 Langkah Login
+
+Setelah menjalankan server lokal (`php artisan serve`), Anda dapat mengakses aplikasi melalui browser di alamat:
+
+```
+http://127.0.0.1:8000
+```
+
+Gunakan kredensial berikut untuk login ke sistem:
+
+- **Username:** `admin`
+- **Password:** `12345678`
+
+Jika login berhasil, Anda akan diarahkan ke halaman perhitungan transportasi.
