@@ -105,7 +105,7 @@ resources/
 
 1. **Clone repositori:**
    ```bash
-   [git clone https://github.com/yourusername/yourproject.git](https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git)
+   git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
    cd PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER
    ```
 
