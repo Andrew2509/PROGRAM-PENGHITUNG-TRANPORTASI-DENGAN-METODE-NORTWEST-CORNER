@@ -113,7 +113,7 @@
 <section id="instalasi">
     <div class="container">
         <h2>🛠 Instalasi &amp; Menjalankan Proyek</h2>
-        <pre style="background:#2d2d2d;color:#f1f1f1;padding:5px;border-radius:var(--radius);overflow-x:auto">
+<pre style="background:#2d2d2d;color:#f1f1f1;padding:5px;border-radius:var(--radius);overflow-x:auto">
        
 ## Clone repositori
     git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
@@ -134,7 +134,7 @@
 ## Jalankan server
     php artisan serve
 </pre>
-    <p class="lead">Akses <code>http://localhost:8000</code></p>
+<p class="lead">Akses <code>http://localhost:8000</code></p>
      <table>
             <thead>
                 <tr>
