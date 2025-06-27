@@ -63,14 +63,14 @@
 <section id="teknologi">
     <div class="container">
       <h2>⚙️ Teknologi yang Digunakan</h2>
-      <p align="center" class="badges" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin: 30px 0;">
+      <div align="center" class="badges" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin: 30px 0;">
         <img alt="Laravel"     src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white">
         <img alt="Livewire"    src="https://img.shields.io/badge/Livewire-4e56a6?style=for-the-badge&logo=livewire&logoColor=white">
         <img alt="MySQL"       src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
         <img alt="HTML5"       src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
         <img alt="CSS3"        src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
         <img alt="JavaScript"  src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-      </p>
+      </div>
     </div>
   </section>
 
