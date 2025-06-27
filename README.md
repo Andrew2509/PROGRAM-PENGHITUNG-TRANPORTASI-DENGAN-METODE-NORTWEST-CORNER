@@ -123,26 +123,19 @@
  </code>   
 
 ## Install dependencies
-<code>
     composer install
     npm install && npm run dev
-</code> 
 
 ## Konfigurasi environment
-<code>
     cp .env.example .env
     php artisan key:generate
-</code> 
 
 ## Setup database
-<code>
     php artisan migrate --seed
-</code> 
-
+    
 ## Jalankan server
-<code>
     php artisan serve
-</code>
+    
 </code>
 </pre>
     <p class="lead">Akses <code>http://localhost:8000</code> &nbsp;|&nbsp; Login admin: <strong>admin</strong> /
