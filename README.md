@@ -79,16 +79,16 @@ resources/
 ## 🧮 Contoh Tampilan Sistem
 
 ### 🔐 Halaman Login
-![Halaman Login](./screenshots/login.png)
+![Halaman Login](./public/Test/Image/login.png)
 
 ### 🚚 Halaman Utama Transportasi
-![Halaman Transportasi](./screenshots/dashboard.png)
+![Halaman Transportasi](./public/Test/Image/tampulan utama.png)
 
 ### ➕ Penambahan Kasus Baru
-![Tambah Kasus](./screenshots/tambah-kasus.png)
+![Tambah Kasus](./public/Test/Image/tambah-kasus.png)
 
 ### 📘 Panduan Sistem Transportasi
-![Panduan Sistem](./screenshots/panduan.png)
+![Panduan Sistem](./public/Test/Image/panduan.png)
 
 ---
 
