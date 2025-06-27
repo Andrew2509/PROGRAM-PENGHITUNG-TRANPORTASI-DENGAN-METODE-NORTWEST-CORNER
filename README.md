@@ -1,7 +1,7 @@
 # Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 
 <p align="center">
-  <img src="./public/Test/Image/logo.png" alt="Logo Sistem" width="200" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="./public/Test/Image/logo.png" alt="Logo Sistem" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </p>
 
 <div align="center">
