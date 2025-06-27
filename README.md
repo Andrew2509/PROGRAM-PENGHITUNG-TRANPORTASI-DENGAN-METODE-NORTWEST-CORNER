@@ -82,19 +82,16 @@
       <div class="gallery" style="margin-bottom:35px">
         <img src="./public/Test/Image/login.png" alt="Halaman Login">
       </div>
----
       <h3>Halaman Utama Transportasi</h3>
       <div class="gallery" style="margin-bottom:35px">
         <img src="./public/Test/Image/tampulan-utama.png" alt="Halaman Utama">
         <img src="./public/Test/Image/tambah-kasus.png"   alt="Tambah Kasus">
       </div>
----
       <h3>Contoh Input &amp; Output</h3>
       <div class="gallery">
         <img src="./public/Test/Image/Input.png"  alt="Contoh Input">
         <img src="./public/Test/Image/Output.png" alt="Contoh Output">
       </div>
----
       <h3 style="margin-top:35px">Panduan Sistem</h3>
       <div class="gallery">
         <img src="./public/Test/Image/panduan.png" alt="Panduan Sistem">
@@ -125,8 +122,6 @@ php artisan migrate --seed
 # Jalankan server
 php artisan serve
 </code></pre>
----
---
       <p class="lead">Akses <code>http://localhost:8000</code> &nbsp;|&nbsp; Login admin: <strong>admin</strong> / <strong>12345678</strong></p>
     </div>
   </section>
@@ -152,7 +147,8 @@ php artisan serve
 
 ## 📜 Lisensi
 Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di lingkungan produksi.
-
-<footer align="center">
+---
+<p align="center">
     © 2023 Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
-</footer>
+</p>
+---
