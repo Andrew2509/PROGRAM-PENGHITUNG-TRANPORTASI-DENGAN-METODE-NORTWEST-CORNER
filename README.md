@@ -140,8 +140,21 @@
     php artisan serve
     
 </pre>
-    <p class="lead">Akses <code>http://localhost:8000</code> &nbsp;|&nbsp; Login admin: <strong>admin</strong> /
-        <strong>12345678</strong></p>
+    <p class="lead">Akses <code>http://localhost:8000</code></p>
+     <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>admint</td>
+                    <td>12345678</td>
+                </tr>
+            </tbody>
+        </table>
         </div>
 </section>
 
