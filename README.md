@@ -117,10 +117,8 @@
 
             
 ## Clone repositori
-<code>
     git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
-    cd PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER
- </code>   
+    cd PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER 
 
 ## Install dependencies
     composer install
@@ -136,7 +134,6 @@
 ## Jalankan server
     php artisan serve
     
-</code>
 </pre>
     <p class="lead">Akses <code>http://localhost:8000</code> &nbsp;|&nbsp; Login admin: <strong>admin</strong> /
         <strong>12345678</strong></p>
