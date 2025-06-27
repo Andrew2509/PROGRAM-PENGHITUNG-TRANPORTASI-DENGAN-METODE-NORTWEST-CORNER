@@ -1,7 +1,7 @@
 # Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 
 <p align="center">
-  <img src="./public/Test/Image/logo.png" alt="Logo Sistem" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="./public/Test/Image/logo.png" alt="Logo Sistem" width="200" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </p>
 
 <div align="center">
@@ -132,10 +132,21 @@ Setelah server berjalan, akses aplikasi di `http://localhost:8000` dan login den
 
 ## 👨‍💻 Kontributor
 
-| Nama | NIM | Peran |
-|------|-----|-------|
-| **Princenton Andrew Brightly Masrikat** | 1462100248 | Desain Input & Tampilan |
-| **Nouval B. Saputra** | 1462100264 | Logika Algoritma & Output |
+<div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 40px 0;">
+  <div style="text-align: center;">
+    <div style="background-color: #e9ecef; border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 40px;">👤</div>
+    <h3>Princenton Andrew</h3>
+    <p>1462100248</p>
+    <p>Desain Input & Tampilan</p>
+  </div>
+  
+  <div style="text-align: center;">
+    <div style="background-color: #e9ecef; border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 40px;">👤</div>
+    <h3>Nouval B. Saputra</h3>
+    <p>1462100264</p>
+    <p>Logika Algoritma & Output</p>
+  </div>
+</div>
 
 ---
 
@@ -145,3 +156,41 @@ Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan t
 <div style="text-align: center; margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
   <p>© 2023 Sistem Penghitungan Biaya Transportasi</p>
 </div>
+
+<style>
+  h1, h2, h3 {
+    color: #2c3e50;
+  }
+  h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #34495e;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  code {
+    background: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+  }
+  pre {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+</style>
