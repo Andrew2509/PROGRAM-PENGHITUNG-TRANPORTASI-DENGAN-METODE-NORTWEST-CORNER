@@ -2,10 +2,17 @@
 
 <section style="text-align:center;padding-top:90px;padding-bottom:90px;background:#ffffff">
     <div class="container">
-      <img src="./public/Test/Image/logo.png" alt="Logo Sistem" height="120" style="margin-bottom:24px">
-      <h1 style="font-size:2.5rem;margin-bottom:16px">
-        Sistem Penghitungan Biaya Transportasi<br>Metode Northwest Corner
-      </h1>
+        <p align="center">
+            <img src="./public/Test/Image/logo.png" alt="Logo Sistem" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </p>
+      <nav>
+        <a href="#tujuan">Tujuan</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#teknologi">Teknologi</a>
+        <a href="#tampilan">Tampilan</a>
+        <a href="#instalasi">Instalasi</a>
+        <a href="#kontributor">Kontributor</a>
+      </nav>
       <p class="lead">Solusi efisien untuk alokasi distribusi barang &amp; total biaya transportasi.</p>
       <a href="#instalasi" style="display:inline-block;background:var(--warna-primer);color:#fff;padding:12px 28px;border-radius:8px;font-weight:600;text-decoration:none">Mulai Install</a>
     </div>
