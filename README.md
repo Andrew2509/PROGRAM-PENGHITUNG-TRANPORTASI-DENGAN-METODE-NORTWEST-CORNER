@@ -82,7 +82,7 @@ resources/
 ![Halaman Login](./public/Test/Image/login.png)
 
 ### 🚚 Halaman Utama Transportasi
-![Halaman Transportasi](./public/Test/Image/tampulan utama.png)
+![Halaman Transportasi](./public/Test/Image/tampulan-utama.png)
 
 ### ➕ Penambahan Kasus Baru
 ![Tambah Kasus](./public/Test/Image/tambah-kasus.png)
