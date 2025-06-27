@@ -5,7 +5,7 @@
         <p align="center">
             <img src="./public/Test/Image/logo.png" alt="Logo Sistem" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         </p>
-      <nav alisgn="center">
+      <nav align="center">
         <a href="#tujuan">Tujuan</a>
         <a href="#fitur">Fitur</a>
         <a href="#teknologi">Teknologi</a>
