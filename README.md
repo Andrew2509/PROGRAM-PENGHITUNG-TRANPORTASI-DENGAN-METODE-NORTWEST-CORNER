@@ -143,7 +143,7 @@
 <code>
     php artisan serve
 </code>
-
+</code>
 </pre>
     <p class="lead">Akses <code>http://localhost:8000</code> &nbsp;|&nbsp; Login admin: <strong>admin</strong> /
         <strong>12345678</strong></p>
