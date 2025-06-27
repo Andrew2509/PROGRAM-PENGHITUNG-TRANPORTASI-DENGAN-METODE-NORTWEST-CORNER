@@ -184,5 +184,5 @@
 ---
 
 <p align="center">
-    © 2023 Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
+    © 2025 Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 </p>
