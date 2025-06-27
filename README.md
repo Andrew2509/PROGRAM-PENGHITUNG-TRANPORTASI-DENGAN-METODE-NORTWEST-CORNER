@@ -1,179 +1,98 @@
-<p align="center"> <img src="./public/Test/Image/logo.png" alt="Logo Sistem" width="200" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> </p><div align="center"> <a href="#tujuan-proyek">Tujuan</a> • <a href="#fitur-utama">Fitur</a> • <a href="#teknologi-yang-digunakan">Teknologi</a> • <a href="#tampilan-sistem">Tampilan</a> • <a href="#instalasi--menjalankan-proyek">Instalasi</a> • <a href="#kontributor">Kontributor</a> </div>
-# Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 
-Aplikasi ini merupakan sistem berbasis web yang dirancang untuk menghitung solusi awal masalah transportasi menggunakan **metode Northwest Corner**, bertujuan menyederhanakan proses alokasi distribusi supply dan demand dengan efisien dan akurat.
+# 🚚 Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 
----
+Sistem ini dirancang untuk mempermudah proses perhitungan distribusi logistik menggunakan metode *Northwest Corner*, sebuah metode awal dalam menyelesaikan masalah transportasi. Aplikasi berbasis web ini memungkinkan pengguna untuk memasukkan data supply, demand, serta biaya transportasi antar titik distribusi dan menghitung total biaya secara otomatis.
+
+<p align="center">
+  <img src="./public/Test/Image/logo.png" alt="Logo Sistem" width="200">
+</p>
 
 ## 🧭 Tujuan Proyek
-
-- Mengotomatisasi perhitungan alokasi awal distribusi barang berdasarkan supply dan demand.
-- Menyediakan antarmuka input yang fleksibel dan mudah digunakan.
-- Menghasilkan output berupa tabel alokasi dan total biaya transportasi.
-- Menyediakan fitur ekspor hasil perhitungan ke PDF dan CSV.
-
----
+- Mengotomatisasi proses perhitungan biaya transportasi dengan metode Northwest Corner.
+- Menyediakan antarmuka yang intuitif untuk input supply, demand, dan matriks biaya.
+- Menampilkan hasil alokasi distribusi dan total biaya transportasi secara langsung.
+- Menyediakan opsi ekspor hasil ke format PDF dan CSV.
 
 ## 🔧 Fitur Utama
-
-- ✅ Input data **Supply** dan **Demand**.
-- ✅ Input **Matriks Biaya Transportasi**.
-- ✅ Perhitungan otomatis dengan metode **Northwest Corner**.
-- ✅ Tabel hasil alokasi dan total biaya.
-- ✅ Validasi input (supply = demand, tidak boleh kosong).
-- ✅ Tombol reset dan ekspor hasil (PDF/CSV).
-- ✅ Halaman bantuan/tutorial.
-
----
+- 📊 **Input Data**: Input supply, demand, dan matriks biaya.
+- 🧮 **Perhitungan Otomatis**: Algoritma Northwest Corner untuk alokasi distribusi awal.
+- 💾 **Ekspor Data**: Hasil alokasi dan biaya dapat disimpan sebagai PDF atau CSV.
 
 ## ⚙️ Teknologi yang Digunakan
+- Laravel 10
+- Livewire
+- MySQL
+- HTML5, CSS3, JavaScript
 
-- **Laravel 10**
-- **Livewire (komponen interaktif tanpa reload)**
-- **Blade Templates**
-- **MySQL**
-- **HTML5, CSS3, JavaScript**
+## 🖼 Tampilan Sistem
 
----
+### Halaman Login
+![Login](./public/Test/Image/login.png)
 
----
+### Halaman Utama Transportasi
+![Utama](./public/Test/Image/tampulan-utama.png)
+![Tambah Kasus](./public/Test/Image/tambah-kasus.png)
 
-## 🗂 Struktur Folder Utama
+### Contoh Input & Output
+![Input](./public/Test/Image/Input.png)
+![Output](./public/Test/Image/Output.png)
 
+### Panduan Sistem
+![Panduan](./public/Test/Image/panduan.png)
+
+## 🛠 Instalasi & Menjalankan Proyek
+
+```bash
+# Clone repositori
+git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
+cd PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER
+
+# Install dependencies
+composer install
+npm install && npm run dev
+
+# Konfigurasi environment
+cp .env.example .env
+php artisan key:generate
+
+# Setup database
+php artisan migrate --seed
+
+# Jalankan server
+php artisan serve
+```
+
+Akses aplikasi di `http://localhost:8000`  
+**Login**:  
+- Username: `admin`  
+- Password: `12345678`
+
+## 📁 Struktur Folder
 ```
 app/
 ├── Livewire/
-│   ├── Auth/
-│   │   ├── Login.php
-│   │   └── Bantuan.php
-│   ├── DemandTable.php
-│   ├── SupplyTable.php
-│   └── Transportation.php
-
-public/
-└── Test/
-    ├── css/
-    │   ├── bantuan.css
-    │   ├── login.css
-    │   └── style.css
-    └── js/
-        └── script.js
+│   └── Transportation.php     ← Logika metode Northwest Corner
 
 resources/
 └── views/
-    ├── components/
-    │   ├── layouts/
-    │   │   └── app.blade.php
-    │   ├── demand-table.blade.php
-    │   └── supply-table.blade.php
     └── livewire/
-        ├── auth/
-        │   └── login.blade.php
-        ├── bantuan.blade.php
-        └── transportation.blade.php
+        └── transportation.blade.php  ← Tampilan input/output
 ```
 
-## 🧮 Contoh Tampilan Sistem
-
-### 🔐 Halaman Login
-![Halaman Login](./public/Test/Image/login.png)
-
-### 🚚 Halaman Utama Transportasi
-![Halaman Transportasi](./public/Test/Image/tampulan-utama.png)
-
-### ➕ Penambahan Kasus Baru
-![Tambah Kasus](./public/Test/Image/tambah-kasus.png)
-
-### 📘 Panduan Sistem Transportasi
-![Panduan Sistem](./public/Test/Image/panduan.png)
-
----
-
-## 🧮 Contoh Input & Output
-
-![Contoh Input](./public/Test/Image/Input.png)
-![Contoh Output](./public/Test/Image/Output.png)
-
----
-
-## 🧪 Instalasi & Menjalankan Proyek
-
-1. **Clone repositori:**
-   ```bash
-   git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
-   cd PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   composer update
-   composer install
-   npm install && npm run dev
-   ```
-
-3. **Atur file `.env`:**
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
-
-4. **Atur koneksi database di `.env` lalu jalankan migrasi dan seeder:**
-   ```bash
-   php artisan migrate --seed
-   ```
-
-5. **Jalankan server lokal:**
-   ```bash
-   php artisan serve
-   ```
-
-> Catatan: Username dan password telah tersedia di database melalui proses seeding.
-
----
-
-## ✅ Validasi & Verifikasi
-
-Semua kebutuhan fungsional telah diuji dan berjalan sesuai ekspektasi, termasuk:
-- Validasi supply = demand.
-- Form input numerik.
-- Algoritma Northwest Corner bekerja tanpa error.
-- Output valid dan dapat diekspor.
-
----
-
-## 📚 Referensi
-
-- Taha, H. A. (2017). *Operations Research: An Introduction*. Pearson.
-- Wang, Y., et al. (2019). *Transportation Cost Analysis in Supply Chain Management*. *Journal of Logistics*.
-- Bowers, S., et al. (2020). *Educational Tools for Logistics and Supply Chain Management*.
-
----
+## 📦 Output Program
+- Tabel alokasi distribusi berdasarkan metode Northwest Corner
+- Total biaya transportasi
+- Ekspor hasil ke PDF dan CSV
 
 ## 👨‍💻 Kontributor
-
-- **1462100248_Princenton Andrew Brightly Masrikat** – Desain Input & Tampilan
-- **1462100264_Nouval B. Saputra** – Logika Algoritma & Output
-
----
+| Nama              | NIM        | Kontribusi                       |
+|-------------------|------------|----------------------------------|
+| Princenton Andrew | 1462100248 | Desain Input & Tampilan          |
+| Nouval B. Saputra | 1462100264 | Logika Algoritma & Output Sistem |
 
 ## 📜 Lisensi
-
-Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di lingkungan produksi.
-
+Proyek ini dibuat sebagai bagian dari UAS mata kuliah **Pengujian Perangkat Lunak** dan tidak ditujukan untuk penggunaan produksi.
 
 ---
 
-## 🔐 Langkah Login
-
-Setelah menjalankan server lokal (`php artisan serve`), Anda dapat mengakses aplikasi melalui browser di alamat:
-
-```
-http://127.0.0.1:8000
-```
-
-Gunakan kredensial berikut untuk login ke sistem:
-
-- **Username:** `admin`
-- **Password:** `12345678`
-
-Jika login berhasil, Anda akan diarahkan ke halaman perhitungan transportasi.
+© 2023 Sistem Penghitungan Biaya Transportasi
