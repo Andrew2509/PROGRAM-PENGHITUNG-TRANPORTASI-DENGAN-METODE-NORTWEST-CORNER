@@ -114,31 +114,25 @@
     <div class="container">
         <h2>🛠 Instalasi &amp; Menjalankan Proyek</h2>
         <pre style="background:#2d2d2d;color:#f1f1f1;padding:5px;border-radius:var(--radius);overflow-x:auto">
-
-            
+       
 ## Clone repositori
     git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
  
     cd PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER 
-
 ## Install dependencies
     composer update
 
     composer install
  
     npm install && npm run dev
-
 ## Konfigurasi environment
     cp .env.example .env
     
     php artisan key:generate
-
 ## Setup database
-    php artisan migrate --seed
-    
+    php artisan migrate --seed  
 ## Jalankan server
     php artisan serve
-    
 </pre>
     <p class="lead">Akses <code>http://localhost:8000</code></p>
      <table>
