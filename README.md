@@ -177,8 +177,9 @@
 ---
 
 ## 📜 Lisensi
-Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di
-lingkungan produksi.
+<p>
+    Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di lingkungan produksi.
+</p>
 ---
 <p align="center">
     © 2023 Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
