@@ -76,6 +76,20 @@ resources/
         └── transportation.blade.php
 ```
 
+## 🧮 Contoh Tampilan Sistem
+
+### 🔐 Halaman Login
+![Halaman Login](./screenshots/login.png)
+
+### 🚚 Halaman Utama Transportasi
+![Halaman Transportasi](./screenshots/dashboard.png)
+
+### ➕ Penambahan Kasus Baru
+![Tambah Kasus](./screenshots/tambah-kasus.png)
+
+### 📘 Panduan Sistem Transportasi
+![Panduan Sistem](./screenshots/panduan.png)
+
 ---
 
 ## 🧮 Contoh Input & Output
