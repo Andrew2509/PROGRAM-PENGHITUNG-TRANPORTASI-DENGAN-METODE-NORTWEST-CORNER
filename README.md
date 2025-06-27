@@ -4,14 +4,7 @@
   <img src="./public/Test/Image/logo.png" alt="Logo Sistem" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </p>
 
-<div align="center">
-  <a href="#tujuan-proyek">Tujuan</a> •
-  <a href="#fitur-utama">Fitur</a> •
-  <a href="#teknologi-yang-digunakan">Teknologi</a> •
-  <a href="#tampilan-sistem">Tampilan</a> •
-  <a href="#instalasi--menjalankan-proyek">Instalasi</a> •
-  <a href="#kontributor">Kontributor</a>
-</div>
+[🔽 Tujuan Proyek](#-tujuan-proyek) • [🔧 Fitur Utama](#-fitur-utama) • [⚙️ Teknologi](#️-teknologi-yang-digunakan) • [🖼 Tampilan](#-tampilan-sistem) • [🛠 Instalasi](#-instalasi--menjalankan-proyek) • [👨‍💻 Kontributor](#-kontributor)
 
 ---
 
