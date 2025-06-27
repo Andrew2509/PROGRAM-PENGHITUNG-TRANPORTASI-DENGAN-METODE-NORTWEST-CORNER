@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="./public/Test/Image/logo.png" alt="Logo Proyek Anda">
-</p>
-
+<p align="center"> <img src="./public/Test/Image/logo.png" alt="Logo Sistem" width="200" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> </p><div align="center"> <a href="#tujuan-proyek">Tujuan</a> • <a href="#fitur-utama">Fitur</a> • <a href="#teknologi-yang-digunakan">Teknologi</a> • <a href="#tampilan-sistem">Tampilan</a> • <a href="#instalasi--menjalankan-proyek">Instalasi</a> • <a href="#kontributor">Kontributor</a> </div>
 # Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 
 Aplikasi ini merupakan sistem berbasis web yang dirancang untuk menghitung solusi awal masalah transportasi menggunakan **metode Northwest Corner**, bertujuan menyederhanakan proses alokasi distribusi supply dan demand dengan efisien dan akurat.
