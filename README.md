@@ -118,14 +118,17 @@
             
 ## Clone repositori
     git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
+    
     cd PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER 
 
 ## Install dependencies
     composer install
+    
     npm install && npm run dev
 
 ## Konfigurasi environment
     cp .env.example .env
+    
     php artisan key:generate
 
 ## Setup database
