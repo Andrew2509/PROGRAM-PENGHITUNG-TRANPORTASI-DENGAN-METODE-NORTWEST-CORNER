@@ -114,7 +114,7 @@
     <div class="container">
         <h2>🛠 Instalasi &amp; Menjalankan Proyek</h2>
         <pre style="background:#2d2d2d;color:#f1f1f1;padding:20px;border-radius:var(--radius);overflow-x:auto">
-          <code>
+<code>
             
 ## Clone repositori
     git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
