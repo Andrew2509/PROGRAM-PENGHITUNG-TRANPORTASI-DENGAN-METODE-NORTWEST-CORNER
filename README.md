@@ -1,44 +1,106 @@
-
-# 🚚 Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
-
-Sistem ini dirancang untuk mempermudah proses perhitungan distribusi logistik menggunakan metode *Northwest Corner*, sebuah metode awal dalam menyelesaikan masalah transportasi. Aplikasi berbasis web ini memungkinkan pengguna untuk memasukkan data supply, demand, serta biaya transportasi antar titik distribusi dan menghitung total biaya secara otomatis.
+# Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 
 <p align="center">
-  <img src="./public/Test/Image/logo.png" alt="Logo Sistem" width="200">
+  <img src="./public/Test/Image/logo.png" alt="Logo Sistem" width="200" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </p>
 
+<div align="center">
+  <a href="#tujuan-proyek">Tujuan</a> •
+  <a href="#fitur-utama">Fitur</a> •
+  <a href="#teknologi-yang-digunakan">Teknologi</a> •
+  <a href="#tampilan-sistem">Tampilan</a> •
+  <a href="#instalasi--menjalankan-proyek">Instalasi</a> •
+  <a href="#kontributor">Kontributor</a>
+</div>
+
+---
+
 ## 🧭 Tujuan Proyek
-- Mengotomatisasi proses perhitungan biaya transportasi dengan metode Northwest Corner.
-- Menyediakan antarmuka yang intuitif untuk input supply, demand, dan matriks biaya.
-- Menampilkan hasil alokasi distribusi dan total biaya transportasi secara langsung.
-- Menyediakan opsi ekspor hasil ke format PDF dan CSV.
+Menyediakan solusi efisien untuk perhitungan biaya transportasi menggunakan metode Northwest Corner dengan:
+- Mengotomatisasi perhitungan alokasi distribusi barang
+- Menyediakan antarmuka input yang fleksibel dan intuitif
+- Menghasilkan tabel alokasi dan total biaya transportasi
+- Menyediakan fitur ekspor hasil ke PDF dan CSV
+
+---
 
 ## 🔧 Fitur Utama
-- 📊 **Input Data**: Input supply, demand, dan matriks biaya.
-- 🧮 **Perhitungan Otomatis**: Algoritma Northwest Corner untuk alokasi distribusi awal.
-- 💾 **Ekspor Data**: Hasil alokasi dan biaya dapat disimpan sebagai PDF atau CSV.
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <h3>📊 Input Data</h3>
+    <ul>
+      <li>Input Supply dan Demand</li>
+      <li>Matriks Biaya Transportasi</li>
+      <li>Validasi data (supply = demand)</li>
+    </ul>
+  </div>
+  
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <h3>🧮 Perhitungan Otomatis</h3>
+    <ul>
+      <li>Metode Northwest Corner</li>
+      <li>Tabel hasil alokasi</li>
+      <li>Total biaya transportasi</li>
+    </ul>
+  </div>
+  
+  <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+    <h3>💾 Ekspor Data</h3>
+    <ul>
+      <li>Ekspor ke PDF</li>
+      <li>Ekspor ke CSV</li>
+      <li>Tombol reset data</li>
+    </ul>
+  </div>
+</div>
+
+---
 
 ## ⚙️ Teknologi yang Digunakan
-- Laravel 10
-- Livewire
-- MySQL
-- HTML5, CSS3, JavaScript
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin: 30px 0;">
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+  <img src="https://img.shields.io/badge/Livewire-4e56a6?style=for-the-badge&logo=livewire&logoColor=white" alt="Livewire">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</div>
+
+---
 
 ## 🖼 Tampilan Sistem
 
 ### Halaman Login
-![Login](./public/Test/Image/login.png)
+<div style="text-align: center;">
+  <img src="./public/Test/Image/login.png" alt="Halaman Login" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;">
+</div>
 
 ### Halaman Utama Transportasi
-![Utama](./public/Test/Image/tampulan-utama.png)
-![Tambah Kasus](./public/Test/Image/tambah-kasus.png)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin: 30px 0;">
+  <div>
+    <img src="./public/Test/Image/tampulan-utama.png" alt="Halaman Utama" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div>
+    <img src="./public/Test/Image/tambah-kasus.png" alt="Tambah Kasus" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+</div>
 
 ### Contoh Input & Output
-![Input](./public/Test/Image/Input.png)
-![Output](./public/Test/Image/Output.png)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin: 30px 0;">
+  <div>
+    <img src="./public/Test/Image/Input.png" alt="Contoh Input" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+  <div>
+    <img src="./public/Test/Image/Output.png" alt="Contoh Output" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+</div>
 
 ### Panduan Sistem
-![Panduan](./public/Test/Image/panduan.png)
+<div style="text-align: center;">
+  <img src="./public/Test/Image/panduan.png" alt="Panduan Sistem" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin: 20px 0;">
+</div>
+
+---
 
 ## 🛠 Instalasi & Menjalankan Proyek
 
@@ -55,44 +117,80 @@ npm install && npm run dev
 cp .env.example .env
 php artisan key:generate
 
-# Setup database
+# Setup database (atur di .env terlebih dahulu)
 php artisan migrate --seed
 
 # Jalankan server
 php artisan serve
 ```
 
-Akses aplikasi di `http://localhost:8000`  
-**Login**:  
-- Username: `admin`  
-- Password: `12345678`
-
-## 📁 Struktur Folder
-```
-app/
-├── Livewire/
-│   └── Transportation.php     ← Logika metode Northwest Corner
-
-resources/
-└── views/
-    └── livewire/
-        └── transportation.blade.php  ← Tampilan input/output
-```
-
-## 📦 Output Program
-- Tabel alokasi distribusi berdasarkan metode Northwest Corner
-- Total biaya transportasi
-- Ekspor hasil ke PDF dan CSV
-
-## 👨‍💻 Kontributor
-| Nama              | NIM        | Kontribusi                       |
-|-------------------|------------|----------------------------------|
-| Princenton Andrew | 1462100248 | Desain Input & Tampilan          |
-| Nouval B. Saputra | 1462100264 | Logika Algoritma & Output Sistem |
-
-## 📜 Lisensi
-Proyek ini dibuat sebagai bagian dari UAS mata kuliah **Pengujian Perangkat Lunak** dan tidak ditujukan untuk penggunaan produksi.
+Setelah server berjalan, akses aplikasi di `http://localhost:8000` dan login dengan:
+- **Username:** `admin`
+- **Password:** `12345678`
 
 ---
 
-© 2023 Sistem Penghitungan Biaya Transportasi
+## 👨‍💻 Kontributor
+
+<div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 40px 0;">
+  <div style="text-align: center;">
+    <div style="background-color: #e9ecef; border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 40px;">👤</div>
+    <h3>Princenton Andrew</h3>
+    <p>1462100248</p>
+    <p>Desain Input & Tampilan</p>
+  </div>
+  
+  <div style="text-align: center;">
+    <div style="background-color: #e9ecef; border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 40px;">👤</div>
+    <h3>Nouval B. Saputra</h3>
+    <p>1462100264</p>
+    <p>Logika Algoritma & Output</p>
+  </div>
+</div>
+
+---
+
+## 📜 Lisensi
+Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di lingkungan produksi.
+
+<div style="text-align: center; margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+  <p>© 2023 Sistem Penghitungan Biaya Transportasi</p>
+</div>
+
+<style>
+  h1, h2, h3 {
+    color: #2c3e50;
+  }
+  h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 30px;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #34495e;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  code {
+    background: #f8f9fa;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+  }
+  pre {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+</style>
