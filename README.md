@@ -113,7 +113,7 @@
 <section id="instalasi">
     <div class="container">
         <h2>🛠 Instalasi &amp; Menjalankan Proyek</h2>
-        <pre style="background:#2d2d2d;color:#f1f1f1;padding:20px;border-radius:var(--radius);overflow-x:auto">
+        <pre style="background:#2d2d2d;color:#f1f1f1;padding:5px;border-radius:var(--radius);overflow-x:auto">
 
             
 ## Clone repositori
@@ -150,7 +150,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>admint</td>
+                    <td>admin</td>
                     <td>12345678</td>
                 </tr>
             </tbody>
