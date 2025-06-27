@@ -132,21 +132,10 @@ Setelah server berjalan, akses aplikasi di `http://localhost:8000` dan login den
 
 ## 👨‍💻 Kontributor
 
-<div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 40px 0;">
-  <div style="text-align: center;">
-    <div style="background-color: #e9ecef; border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 40px;">👤</div>
-    <h3>Princenton Andrew</h3>
-    <p>1462100248</p>
-    <p>Desain Input & Tampilan</p>
-  </div>
-  
-  <div style="text-align: center;">
-    <div style="background-color: #e9ecef; border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 40px;">👤</div>
-    <h3>Nouval B. Saputra</h3>
-    <p>1462100264</p>
-    <p>Logika Algoritma & Output</p>
-  </div>
-</div>
+| Nama | NIM | Peran |
+|------|-----|-------|
+| **Princenton Andrew Brightly Masrikat** | 1462100248 | Desain Input & Tampilan |
+| **Nouval B. Saputra** | 1462100264 | Logika Algoritma & Output |
 
 ---
 
