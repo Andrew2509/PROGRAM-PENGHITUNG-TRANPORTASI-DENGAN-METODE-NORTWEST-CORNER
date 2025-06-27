@@ -161,7 +161,7 @@ Semua kebutuhan fungsional telah diuji dan berjalan sesuai ekspektasi, termasuk:
 
 ## 📜 Lisensi
 
-Proyek ini dibuat untuk keperluan akademik (UAS Rekayasa Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di lingkungan produksi.
+Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di lingkungan produksi.
 
 
 ---
