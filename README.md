@@ -151,4 +151,3 @@ Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan t
 <p align="center">
     © 2023 Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 </p>
----
