@@ -153,6 +153,6 @@ php artisan serve
 ## 📜 Lisensi
 Proyek ini dibuat untuk keperluan akademik (UAS Pengujian Perangkat Lunak) dan tidak dimaksudkan untuk digunakan di lingkungan produksi.
 
-<footer style="text-align:center;padding:24px 0;font-size:.9rem;color:var(--teks-abu);">
+<footer align="center">
     © 2023 Sistem Penghitungan Biaya Transportasi – Metode Northwest Corner
 </footer>
