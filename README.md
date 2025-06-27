@@ -116,23 +116,24 @@
         <pre style="background:#2d2d2d;color:#f1f1f1;padding:20px;border-radius:var(--radius);overflow-x:auto">
           <code>
             
-# Clone repositori
+## Clone repositori
     git clone https://github.com/Andrew2509/PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER.git
     cd PROGRAM-PENGHITUNG-TRANPORTASI-DENGAN-METODE-NORTWEST-CORNER
 
-# Install dependencies
+## Install dependencies
     composer install
     npm install && npm run dev
 
-# Konfigurasi environment
+## Konfigurasi environment
     cp .env.example .env
     php artisan key:generate
 
-# Setup database
+## Setup database
     php artisan migrate --seed
 
-# Jalankan server
+## Jalankan server
     php artisan serve
+-
           </code>
       </pre>
         <p class="lead">Akses <code>http://localhost:8000</code> &nbsp;|&nbsp; Login admin: <strong>admin</strong> /
