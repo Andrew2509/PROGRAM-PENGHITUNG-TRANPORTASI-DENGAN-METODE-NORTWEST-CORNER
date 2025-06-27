@@ -190,7 +190,7 @@
     lingkungan produksi.
 </p>
 
-[Tautan ke Website]([[https://chat.deepseek.com/])
+[Tautan ke Website]((https://chat.deepseek.com/))
 
 ---
 
